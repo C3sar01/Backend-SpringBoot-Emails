@@ -12,6 +12,16 @@ repositories {
 	mavenCentral()
 }
 
+bootRun {
+	sourceResources sourceSets.main
+}
+bootJar {
+	archiveFileName = 'emails.jar'
+}
+compileJava {
+	options.annotationProcessorPath = configurations.compileClasspath
+}
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-mail'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
