@@ -13,7 +13,7 @@ import javax.mail.internet.MimeMessage;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://c3sar01.github.io/Portafolio/")
 public class EmailController {
 
     @Autowired
